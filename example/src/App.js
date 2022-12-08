@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'kayaui'
+import { Paragraph, Button } from 'kayaui'
 import 'kayaui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <Paragraph text="Create React Library Example 😄" />
+      <Button text={"click"} onClick={() => alert("asdf")}/>
+    </>
+  )
 }
 
 export default App
